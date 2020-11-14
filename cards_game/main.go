@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var card string = "Kings"
+	cards := newDeck()
+	cards.saveToFile("./mycards.txt")
 
-	fmt.Println(card)
+	fmt.Println(cards.toString())
 }
